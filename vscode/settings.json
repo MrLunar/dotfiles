@@ -1,0 +1,17 @@
+{
+    "editor.rulers": [
+        120
+    ],
+    "workbench.startupEditor": "newUntitledFile",
+    "go.formatTool": "goimports",
+    "extensions.ignoreRecommendations": true,
+    "testing.automaticallyOpenPeekView": "never",
+    "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
+    "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
+    "editor.fontFamily": "Source Code Pro, Consolas, 'Courier New', monospace",
+    "editor.fontWeight": "normal",
+    "editor.renderControlCharacters": false,
+    "editor.renderWhitespace": "none",
+    "window.zoomLevel": 1,
+    "editor.minimap.showSlider": "always"
+}
