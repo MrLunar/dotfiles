@@ -1,0 +1,10 @@
+eamodio.gitlens
+monokai.theme-monokai-pro-vscode
+ms-python.python
+ms-python.vscode-pylance
+shardulm94.trailing-spaces
+
+
+## Windows Only
+
+ms-vscode-remote.remote-wsl
