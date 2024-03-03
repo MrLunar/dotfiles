@@ -134,5 +134,10 @@ hi TabLineFill cterm=none ctermbg=237
 hi TabLineSel cterm=underline,bold ctermfg=221 ctermbg=235
 hi TabLine cterm=none ctermbg=237
 
+" Highlight trailing whitespace
 highlight ExtraWhitespace ctermbg=88
-match ExtraWhitespace /\s\+$/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/ 
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/ 
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/ 
+autocmd BufWinLeave * call clearmatches()
+
