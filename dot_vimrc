@@ -8,13 +8,6 @@ let mapleader = " "
 map <leader>e :Explore<CR>
 map <leader>n :noh<CR>
 
-" Plugins (Run :PlugInstall after changing)
-"call plug#begin()
-"Plug 'vim-airline/vim-airline'
-"Plug 'vim-airline/vim-airline-themes'
-"Plug 'preservim/nerdtree'
-"call plug#end()
-
 " Adapted from: vim-better-default
 syntax on                      " Syntax highlighting
 filetype plugin indent on      " Automatically detect file types
@@ -35,7 +28,7 @@ set viminfo+=!                 " Viminfo include !
 set wildmenu                   " Show list instead of just completing
 set ttymouse=xterm2
 """
-""set shortmess=atOI " No help Uganda information, and overwrite read messages to avoid PRESS ENTER prompts
+set shortmess=atOI " No help Uganda information, and overwrite read messages to avoid PRESS ENTER prompts
 set ignorecase     " Case insensitive search
 set smartcase      " ... but case sensitive when uc present
 set scrolljump=5   " Line to scroll when cursor leaves screen
@@ -136,8 +129,8 @@ hi TabLine cterm=none ctermbg=237
 
 " Highlight trailing whitespace
 highlight ExtraWhitespace ctermbg=88
-autocmd BufWinEnter * match ExtraWhitespace /\s\+$/ 
-autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/ 
-autocmd InsertLeave * match ExtraWhitespace /\s\+$/ 
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
